@@ -28,7 +28,16 @@ function buscaCortePorId(id) {
   return "Corte não encontrado";
 }
 
-function buscaBarbaPorId(id) {}
+function buscaBarbaPorId(id) {
+  const { barbas } = barbearia;
+  for (let i = 0; i < barbas.length; i++) {
+    if (barbas[i].id === id) {
+      return barbas[i];
+    }
+  }
+
+  return "Barba não encontrada";
+}
 
 function verificaStatusBarbearia() {}
 
