@@ -75,4 +75,7 @@ function atualizarServico(lista, id, valor, tipo) {
   return lista;
 }
 
-function calculaTotal(pedido) {}
+function calculaTotal(pedido) {
+  const {pedidoCortePreco, pedidoBarbaPreco} = pedido;
+  return pedidoCortePreco + pedidoBarbaPreco;
+}
