@@ -59,12 +59,20 @@ function criaPedido(nomeCliente, corteId, barbaId) {
     pedidoCorte: corte.tipo,
     pedidoCortePreco: corte.valor,
     pedidoBarba: barba.tipo,
-    pedidoBarbaPreco: barba.valor
-  }
-  
+    pedidoBarbaPreco: barba.valor,
+  };
+
   return pedido;
 }
 
-function atualizarServico(lista, id, valor, tipo) {}
+function atualizarServico(lista, id, valor, tipo) {
+  for (let i = 0; i < lista.length; i++) {
+    if (lista[i].id === id) {
+      lista[i].valor = valor;
+      lista[i].tipo = tipo;
+    }
+  }
+  return lista;
+}
 
 function calculaTotal(pedido) {}
