@@ -43,7 +43,9 @@ function verificaStatusBarbearia() {
   return barbearia.estaAberto ? "Estamos abertos" : "Estamos fechados";
 }
 
-function retornaTodosCortes() {}
+function retornaTodosCortes() {
+  return barbearia.cortes;
+}
 
 function retornaTodasBarbas() {}
 
