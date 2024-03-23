@@ -39,7 +39,9 @@ function buscaBarbaPorId(id) {
   return "Barba não encontrada";
 }
 
-function verificaStatusBarbearia() {}
+function verificaStatusBarbearia() {
+  return barbearia.estaAberto ? "Estamos abertos" : "Estamos fechados";
+}
 
 function retornaTodosCortes() {}
 
