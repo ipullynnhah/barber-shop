@@ -4,7 +4,7 @@ const barbearia = {
     { id: 2, tipo: "Samurai", valor: 35 },
     { id: 3, tipo: "Pompadour", valor: 20 },
     { id: 4, tipo: "Moicano", valor: 10 },
-    { id: 5, tipo: "Razor part", valor: 5 },
+    { id: 5, tipo: "Razor part", valor: 5 }
   ],
 
   barbas: [
@@ -12,9 +12,9 @@ const barbearia = {
     { id: 2, tipo: "Van Dyke", valor: 20 },
     { id: 3, tipo: "Barba Média", valor: 20 },
     { id: 4, tipo: "Barba Baixa", valor: 20 },
-    { id: 5, tipo: "Barba Zero", valor: 15 },
+    { id: 5, tipo: "Barba Zero", valor: 15 }
   ],
-  estaAberto: true,
+  estaAberto: true
 };
 
 function buscaCortePorId(id) {
@@ -63,7 +63,7 @@ function criaPedido(nomeCliente, corteId, barbaId) {
     pedidoCorte: corte.tipo,
     pedidoCortePreco: corte.valor,
     pedidoBarba: barba.tipo,
-    pedidoBarbaPreco: barba.valor,
+    pedidoBarbaPreco: barba.valor
   };
 }
 
